@@ -6,28 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
     <header>
         <h1>World By Race</h1>
     </header>
-    <form>
-        <input type="text" id="newsSearch">
+    <form class="form">
+        <div>
+        <input type="text" id="newsSearch" value="Location, Date, Author">
         <label for="newsSearch"></label>
-        <input type="submit" value="Search Articles">
+        <input type="submit" name="submitButton" value="Search Articles">
         </div>
     </form> 
     <div class="news-articles">
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
         <article></article>
     </div>
     <div class="sidebar">
@@ -35,6 +27,7 @@
         <a href="#">Publication</a>
         <a href="#">Year</a>
         <a href="#">Location</a>
+        <a href="aboutMe.html">About Me</a>
     </div> 
 </body>
 </html>

@@ -2,6 +2,7 @@ body {
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(10,1fr);
+    background-image: url(https://cdn.dribbble.com/users/4143097/screenshots/9133710/media/63ecbf3046d4520d2c5e4b329ab86bb2.gif);
 }
 
 header {
@@ -34,4 +35,11 @@ a {
     grid-row: 3/ span 10;
     border: solid;
     border-color: black;
+}
+
+.container-article {
+    border: solid;
+    color: gold;
+    font-size: larger;
+
 }
