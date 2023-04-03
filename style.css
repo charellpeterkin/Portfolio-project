@@ -43,3 +43,12 @@ a {
     font-size: larger;
 
 }
+
+@media (max-device-width: 480px) {
+    .sidebar {
+        background-color: black;
+    }
+    a {
+        color: white;
+    }
+}

@@ -34,9 +34,50 @@ function fetchData() {
                })
         }
         
+        let authorLinks = document.querySelector(".sidebar a")
+
+        authorLinks.addEventListener("click", () => {
+            article.innerHTML = element.author
+            
+        })
+
+        let pubLinks = document.querySelector(".sidebar a:nth-child(2)")
+           pubLinks.addEventListener("click", () => {
+            article.innerHTML = element.source.name
+           })
+
+        let yearLink = document.querySelector(".sidebar a:nth-child(3)")
+
+        yearLink.addEventListener("click", () => {
+            article.innerHTML = element.publishedAt
+            // console.log(element.publishedAt)
+        })
+
+        let locationLink = document.querySelector(".sidebar a:nth-child(4)")
+        locationLink.addEventListener("click", () => {
+            article.innerHTML = element.url
+        })
+
+        let formButton = document.querySelector(".form")
+        console.log(formButton)
+   
+        let placeholder = document.querySelector("input[placeholder]")
+        console.log(placeholder)
+   
+        formButton.addEventListener("submit", () => {
+         if (placeholder = "number") {
+           article.innerHTML = element.publishedAt
+         } else if (placeholder != "number") {
+            article.innerHTML = element.source.name
+         }
+        })
+
+        
        });
 
     })
+
+   
 }
 
 fetchData();
